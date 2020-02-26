@@ -250,11 +250,11 @@ class PickerNB extends Component {
 }
 
 // eslint-disable-next-line react/no-multi-comp
-//PickerNB.Item = createReactClass({
-  //render() {
-    //return <Picker.Item {...this.props()} />;
-  //}
-//});
+PickerNB.Item = createReactClass({
+  render() {
+    return <Picker.Item {...this.props()} />;
+  }
+});
 
 PickerNB.propTypes = {
   ...ViewPropTypes,
