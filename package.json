@@ -17,7 +17,7 @@
     "lint": "eslint \"src/**/*.{js, json}\"",
     "transpile": "npm run compile && cp src/basic/Icon/NBIcons.json dist/src/basic/Icon",
     "prepublish": "npm run transpile",
-    "postinstall": "node addEjectScript.js && opencollective-postinstall && npm run prepublish",
+    "postinstall": "node addEjectScript.js && opencollective-postinstall",
     "flow": "flow"
   },
   "jest": {
