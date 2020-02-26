@@ -160,13 +160,13 @@ class PickerNB extends Component {
             }}
           >
             <Text style={this.props.headerBackButtonTextStyle}>
-              {this.props.headerBackButtonText}
+              {this.props.headerBackButtonText || "Back"}
             </Text>
           </Button>
         </Left>
         <Body>
           <Title style={this.props.headerTitleStyle}>
-            {this.props.iosHeader || "custom header"}
+            {this.props.iosHeader || "Select One"}
           </Title>
         </Body>
         <Right />
