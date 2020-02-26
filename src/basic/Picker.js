@@ -18,11 +18,11 @@ export default class PickerNB extends Component {
 }
 
 // eslint-disable-next-line react/no-multi-comp
-//PickerNB.Item = createReactClass({
-  //render() {
-    //return <Picker.Item testID="pickerSelectItem" {...this.props} />;
-  //}
-//});
+PickerNB.Item = createReactClass({
+  render() {
+    return <Picker.Item testID="pickerSelectItem" {...this.props} />;
+  }
+});
 
 PickerNB.propTypes = {
   ...Picker.propTypes
