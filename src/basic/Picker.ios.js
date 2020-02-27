@@ -160,13 +160,13 @@ class PickerNB extends Component {
             }}
           >
             <Text style={this.props.headerBackButtonTextStyle}>
-              {this.props.headerBackButtonText || "Back"}
+              {this.props.headerBackButtonText || "Bck"}
             </Text>
           </Button>
         </Left>
         <Body>
           <Title style={this.props.headerTitleStyle}>
-            {this.props.iosHeader || "Select One"}
+            {this.props.iosHeader || "SelectOne"}
           </Title>
         </Body>
         <Right />
@@ -216,7 +216,6 @@ class PickerNB extends Component {
               renderItem={({ item }) => (
                 <ListItem
                   accessible={this.props.pickerAccessible}
-                  testID={item.props.testID}
                   selected={item.props.value === this.props.selectedValue}
                   button
                   style={this.props.itemStyle}
@@ -229,7 +228,7 @@ class PickerNB extends Component {
                   <Left>
                     <Text 
                       style={this.props.itemTextStyle}
-                      testID={item.props.testID}
+                      testID={this.props.pickerTextID}
                     >
                       {item.props.label}
                     </Text>
