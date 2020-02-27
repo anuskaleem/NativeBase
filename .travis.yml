@@ -15,4 +15,4 @@ install:
   - yarn
 script:
   - yarn lint
-  - git push https://$GITHUB_API_KEY:x-oauth-basic@github.com/anuskaleem/NativeBase.git master
+  - git push https://$GITHUB_API_KEY:x-oauth-basic@github.com/anuskaleem/NativeBase.git anuskaleem-patch-1
