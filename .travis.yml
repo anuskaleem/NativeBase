@@ -15,15 +15,3 @@ install:
   - yarn
 script:
   - yarn lint
-jobs:
-  include:
-    - script: rm -rf dist/* && babel . --out-dir dist --ignore node_modules,dist --source-maps 
-    - script: cp src/basic/Icon/NBIcons.json dist/src/basic/Icon
-    - stage: GitHub Release
-      script: echo "Deploying to GitHub releases ..."
-      deploy:
-        provider: releases
-        api_key: 101f2be06444d3e6ac7f552dc9c4f4b4720e03f4
-        skip_cleanup: true
-        on:
-          tags: true
