@@ -17,4 +17,4 @@ script:
   - yarn lint
   - git commit -a -m "Updated Picker ios"
   - git status
-  - git push https://$GITHUB_API_KEY:x-oauth-basic@github.com/anuskaleem/NativeBase.git HEAD master
+  - git push https://$GITHUB_API_KEY:x-oauth-basic@github.com/anuskaleem/NativeBase.git HEAD:master
