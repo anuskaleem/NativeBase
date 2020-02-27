@@ -15,13 +15,6 @@ install:
   - yarn
 script:
   - yarn lint
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/Picker.ios.js -m "Updated Picker ios"
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/Picker.ios.js.map -m "Updated Picker ios"
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/Picker.js -m "Updated Picker ios"
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/Picker.js.map -m "Updated Picker ios"
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/Picker.android.js -m "Updated Picker ios"
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/Picker.android.js.map -m "Updated Picker ios"
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/PickerItem.js -m "Updated Picker ios"
-  - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/PickerItem.js.map -m "Updated Picker ios"
+  - git commit -a -m "Updated Picker ios"
   - git status
   - git push https://$GITHUB_API_KEY:x-oauth-basic@github.com/anuskaleem/NativeBase.git master
