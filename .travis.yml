@@ -23,4 +23,4 @@ script:
   - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/Picker.android.js.map -m "Updated Picker ios"
   - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/PickerItem.js -m "Updated Picker ios"
   - git commit /home/travis/build/anuskaleem/NativeBase/dist/src/basic/PickerItem.js.map -m "Updated Picker ios"
-  - git push https://$GITHUB_API_KEY:x-oauth-basic@github.com/anuskaleem/NativeBase.git next
+  - git push https://$GITHUB_API_KEY:x-oauth-basic@github.com/anuskaleem/NativeBase.git master
