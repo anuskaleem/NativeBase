@@ -4,12 +4,10 @@ import React, { Component } from 'react';
 import createReactClass from 'create-react-class';
 import { Picker } from 'react-native';
 import { connectStyle } from 'native-base-shoutem-theme';
-import Reactotron from 'reactotron-react-native'
 
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 export default class PickerNB extends Component {
-  Reactotron.logImportant("logging from Picker JS");
   console.log("logging from Picker JS");
   render() {
     return (
