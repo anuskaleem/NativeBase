@@ -179,8 +179,7 @@ class PickerNB extends Component {
 
   // eslint-disable-next-line camelcase
   UNSAFE_componentWillReceiveProps(nextProps) {
-    console.log("logging from ios receiving props")
-    console.log("logging from ios prop "+nextProps)
+    console.log(`logging from ios prop ${nextProps}`)
     const currentLabel = this.state.currentLabel;
     const nextLabel = this.getLabel(nextProps);
     const currentDS = this.state.dataSource;
