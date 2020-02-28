@@ -25,7 +25,6 @@ import { Body } from './Body';
 class PickerNB extends Component {
   constructor(props) {
     super(props);
-    console.log("logging from ios constructor")
     this.state = {
       modalVisible: false,
       currentLabel: this.getLabel(props),
@@ -142,7 +141,6 @@ class PickerNB extends Component {
   }
 
   renderHeader() {
-    console.log("logging from ios render Header")
     return this.props.renderHeader ? (
       this.props.renderHeader(() => this._setModalVisible(false))
     ) : (
@@ -163,13 +161,13 @@ class PickerNB extends Component {
             }}
           >
             <Text style={this.props.headerBackButtonTextStyle}>
-              {this.props.headerBackButtonText || "CustomBack"}
+              {this.props.headerBackButtonText || "Back"}
             </Text>
           </Button>
         </Left>
         <Body>
           <Title style={this.props.headerTitleStyle}>
-            {this.props.iosHeader || "Custom"}
+            {this.props.iosHeader || "Select One"}
           </Title>
         </Body>
         <Right />
@@ -179,7 +177,6 @@ class PickerNB extends Component {
 
   // eslint-disable-next-line camelcase
   UNSAFE_componentWillReceiveProps(nextProps) {
-    console.log(`logging from ios prop ${nextProps}`)
     const currentLabel = this.state.currentLabel;
     const nextLabel = this.getLabel(nextProps);
     const currentDS = this.state.dataSource;
@@ -198,7 +195,6 @@ class PickerNB extends Component {
   }
 
   render() {
-    console.log("logging from ios render")
     return (
       <View ref={c => (this._root = c)}>
         {this.renderButton()}
