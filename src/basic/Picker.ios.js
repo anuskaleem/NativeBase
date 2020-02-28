@@ -259,6 +259,7 @@ class PickerNB extends Component {
 // eslint-disable-next-line react/no-multi-comp
 PickerNB.Item = createReactClass({
   render() {
+    console.log("logging from picker ios item")
     return <Picker.Item {...this.props()} />;
   }
 });
