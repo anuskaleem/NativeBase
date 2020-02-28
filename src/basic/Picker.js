@@ -8,8 +8,8 @@ import { connectStyle } from 'native-base-shoutem-theme';
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 export default class PickerNB extends Component {
-  console.log("logging from Picker JS");
   render() {
+  console.log("logging from Picker JS");
     return (
       <Picker ref={c => (this._root = c)} {...this.props}>
         {this.props.children}
@@ -21,6 +21,7 @@ export default class PickerNB extends Component {
 // eslint-disable-next-line react/no-multi-comp
 PickerNB.Item = createReactClass({
   render() {
+  console.log("logging from Picker ITEM JS");
     return <Picker.Item {...this.props} />;
   }
 });
