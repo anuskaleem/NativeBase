@@ -5,8 +5,8 @@ import { connectStyle } from 'native-base-shoutem-theme';
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 class Item extends Component {
-  console.log("logging from picker item")
   render() {
+  console.log("logging from pickerItem item")
     return <Picker.Item ref={c => (this._root = c)} {...this.props} />;
   }
 }
