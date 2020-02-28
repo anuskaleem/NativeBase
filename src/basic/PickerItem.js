@@ -6,7 +6,6 @@ import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 class Item extends Component {
   render() {
-    console.log("logging from pickerItem item")
     return <Picker.Item ref={c => (this._root = c)} {...this.props} />;
   }
 }
