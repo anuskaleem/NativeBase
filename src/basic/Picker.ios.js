@@ -7,7 +7,6 @@ import createReactClass from 'create-react-class';
 import { FlatList, Modal, Picker, View, ViewPropTypes } from 'react-native';
 import { connectStyle } from 'native-base-shoutem-theme';
 import { find, get } from 'lodash';
-import Reactotron from 'reactotron-react-native'
 
 import computeProps from '../utils/computeProps';
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
@@ -26,7 +25,6 @@ import { Body } from './Body';
 class PickerNB extends Component {
   constructor(props) {
     super(props);
-    Reactotron.logImportant("logging from ios constructor")
     console.log("logging from ios constructor")
     this.state = {
       modalVisible: false,
@@ -95,7 +93,6 @@ class PickerNB extends Component {
   }
 
   renderButton() {
-    Reactotron.logImportant("logging from ios render button")
     console.log("logging from ios render button")
     const onPress = () => {
       if (this.props.enabled !== undefined && !this.props.enabled) return;
@@ -145,7 +142,6 @@ class PickerNB extends Component {
   }
 
   renderHeader() {
-    Reactotron.logImportant("logging from ios render Header")
     console.log("logging from ios render Header")
     return this.props.renderHeader ? (
       this.props.renderHeader(() => this._setModalVisible(false))
@@ -183,9 +179,7 @@ class PickerNB extends Component {
 
   // eslint-disable-next-line camelcase
   UNSAFE_componentWillReceiveProps(nextProps) {
-    Reactotron.logImportant("logging from ios receiving props")
     console.log("logging from ios receiving props")
-    Reactotron.logImportant("logging from ios prop "+nextProps)
     console.log("logging from ios prop "+nextProps)
     const currentLabel = this.state.currentLabel;
     const nextLabel = this.getLabel(nextProps);
@@ -205,7 +199,6 @@ class PickerNB extends Component {
   }
 
   render() {
-    Reactotron.logImportant("logging from ios render")
     console.log("logging from ios render")
     return (
       <View ref={c => (this._root = c)}>
